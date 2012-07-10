@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.SDUGameEngineDesigner.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.SDUGameEngineDesigner.Perspective"
+            icon="icons/sample.gif"
+            id="com.sdu.gameEngine.perspective"
+            name="DesignerPerspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.SDUGameEngineDesigner.View.PackageExplorer"
+            fastViewWidthRatio="0.25f"
+            icon="icons/alt_window_16.gif"
+            id="com.SDUGameEngineDesigner.view1"
+            name="包资源管理器">
+      </view>
+      <view
+            class="com.SDUGameEngineDesigner.View.Console"
+            icon="icons/alt_window_16.gif"
+            id="com.SDUGameEngineDesigner.view2"
+            name="控制台">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.SDUGameEngineDesigner.CodeEditor.CodeEditor"
+            default="false"
+            icon="icons/alt_window_16.gif"
+            id="com.SDUGameEngineDesigner.editor1"
+            name="代码编辑器">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.SDUGameEngineDesigner.MapEditor.MapEditor"
+            default="false"
+            icon="icons/alt_window_16.gif"
+            id="com.SDUGameEngineDesigner.editor2"
+            name="地图编辑器">
+      </editor>
+   </extension>
+
+</plugin>

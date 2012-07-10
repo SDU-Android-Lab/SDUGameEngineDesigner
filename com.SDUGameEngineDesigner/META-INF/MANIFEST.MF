@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GameEngine
+Bundle-SymbolicName: com.SDUGameEngineDesigner;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.SDUGameEngineDesigner.Activator
+Bundle-Vendor: SDU
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.draw2d
